@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antarctic Icefish</title>
+    <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body class="relative text-white antialiased">
+
+    <!-- Fundo geral com gradiente + glow + vinheta -->
+    <div class="absolute inset-0 -z-20 bg-gradient-to-b from-[#0a1f44] to-[#00111c]"></div>
+    <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(60%_40%_at_70%_25%,rgba(56,189,248,0.22)_0%,transparent_70%)]">
+    </div>
+    <div class="pointer-events-none absolute inset-0 -z-10 shadow-[inset_0_0_180px_40px_rgba(0,0,0,0.45)]"></div>
+
+    <!-- Hero -->
+    <section class="relative flex items-center">
+        <div class="mx-auto max-w-7xl px-6 py-32
+              grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center gap-16 w-full">
+
+            <!-- Texto -->
+            <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+                <h1 class="text-5xl font-extrabold">ANTARCTIC<br>ICEFISH</h1>
+                <p class="text-xl text-blue-200">The fish with no hemoglobin</p>
+                <a href="#about"
+                    class="inline-block bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-semibold shadow-[0_8px_30px_-6px_rgba(34,211,238,.4)]">
+                    Learn More
+                </a>
+            </div>
+
+            <!-- Peixe com brilho -->
+            <!-- Peixe maior (cresce por transform, sem estourar o grid) -->
+            <!-- Peixe maior (ajuste final) -->
+            <div class="lg:w-1/2 flex justify-center lg:justify-end overflow-visible">
+                <img src="/img/icefish.png" alt="Antarctic Icefish" class="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl
+              scale-110 lg:scale-150 origin-center lg:origin-right
+              drop-shadow-[0_0_40px_rgba(56,189,248,0.5)]
+              mix-blend-screen brightness-110 animate-float">
+            </div>
+
+
+
+    </section>
+
+
+
+    <!-- Features -->
+    <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-blue-800/40 rounded-xl p-6 text-center space-y-2">
+            <span class="text-3xl">🌡️</span>
+            <h3 class="font-semibold">-2°C</h3>
+            <p class="text-sm text-blue-200">Frigid Waters</p>
+        </div>
+        <div class="bg-blue-800/40 rounded-xl p-6 text-center space-y-2">
+            <span class="text-3xl">💙</span>
+            <h3 class="font-semibold">Large Heart</h3>
+        </div>
+        <div class="bg-blue-800/40 rounded-xl p-6 text-center space-y-2">
+            <span class="text-3xl">💧</span>
+            <h3 class="font-semibold">Clear Blood</h3>
+        </div>
+        <div class="bg-blue-800/40 rounded-xl p-6 text-center space-y-2">
+            <span class="text-3xl">⚙️</span>
+            <h3 class="font-semibold">Antifreeze</h3>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8">
+        <!-- Texto -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">ABOUT</h2>
+            <p class="text-blue-200">
+                Antarctic icefish’s deep edient-lafficitor blari bord oxygen transport...
+            </p>
+        </div>
+
+        <!-- Cards menores -->
+        <div class="space-y-6 max-w-md ml-auto">
+            <div class="bg-blue-800/40 rounded-xl p-6">
+                <h3 class="font-semibold mb-2">Adaptations</h3>
+                <p class="text-blue-200">Oxygen transport prevent sized - hear tris...</p>
+            </div>
+            <div class="bg-blue-800/40 rounded-xl p-6">
+                <h3 class="font-semibold mb-2">Antifreeze Proteins</h3>
+                <p class="text-blue-200">Proteins preventing formation in reinise...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habitat -->
+    <section id="habitat" class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+        <!-- Texto -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">HABITAT</h2>
+            <p class="text-blue-200">
+                Native to the continental shelf and deep waters of the Southern Ocean.
+            </p>
+        </div>
+
+        <!-- Card do mapa (menor) -->
+        <div class="ml-auto w-full max-w-sm">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
+                <span class="block text-sm tracking-widest text-blue-200 mb-4">ANTARCTIC MAP</span>
+                <img src="/img/antarctica.png" alt="Antarctic map"
+                    class="mx-auto w-48 md:w-64 drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold mb-6">GALLERY & MEDIA</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <img src="/img/ice1.jpg" alt="Icefish" class="rounded-xl">
+            <img src="/img/ice2.jpg" alt="Icefish" class="rounded-xl">
+
+            <!-- Vídeo do YouTube -->
+            <div class="rounded-xl overflow-hidden">
+                <iframe class="w-full h-60 sm:h-full" src="https://www.youtube.com/embed/A4arbFNGkjU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
